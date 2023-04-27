@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS STYLES-->
+  <link rel="stylesheet" href="style.css">
+  <!--TAILWIND STYLES-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--REMIX ICONS-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!--TITLE-->
+  <title>Giorgio App</title>
+</head>
+
+<body class="p-8 flex justify-center items-center bg-blue-400 text-black">
+  <div class="max-w-[980px] flex flex-col gap-4">
+    <!--SETTINGS-->
+    <header class="p-8 flex items-center bg-white rounded-lg">
+      <div class="w-full flex flex-col gap-8">
+        <a href="/" class="text-4xl text-center font-bold">
+          🤖 Giorgio Assistant
+        </a>
+        <div class="flex flex-col gap-5">
+          <div class="md:flex md:justify-between gap-5">
+            <div class="flex items-center gap-4">
+              <h3 class="font-semibold">
+                Idioma del asistente:
+              </h3>
+              <select class="px-4 py-1 bg-blue-100 font-semibold rounded-lg" id="language">
+                <option value="es-PE">Español (🇪🇸)</option>
+                <option value="en-US">Inglés (🇺🇸)</option>
+              </select>
+            </div>
+            <div class="mt-3 md:mt-0 flex items-center gap-4">
+              <h3 class="font-semibold">
+                Tema de la aplicación:
+              </h3>
+              <select class="px-4 py-1 bg-blue-100 font-semibold rounded-lg" id="theme">
+                <option value="light">☀️ Claro</option>
+                <option value="dark">🌙 Oscuro</option>
+              </select>
+            </div>
+          </div>
+          <button class="px-10 py-2 bg-blue-500 hover:bg-blue-800 text-yellow-50 font-bold rounded-lg"
+            id="btnSaveSettings">
+            💾 Guardar cambios
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="p-8 flex items-center justify-between gap-5 bg-white rounded-lg">
+      <button class="px-10 py-2 flex gap-2 bg-blue-500 hover:bg-blue-800 text-yellow-50 font-bold rounded-lg"
+        id="assistantOption">
+        <i class="ri-user-5-fill"></i>
+        <p>Asistente universitario</p>
+      </button>
+      <button class="px-10 py-2 flex gap-2 bg-blue-500 hover:bg-blue-800 text-yellow-50 font-bold rounded-lg"
+        id="playgroundOption">
+        <i class="ri-user-voice-fill"></i>
+        <p>Reconocimiento de voz</p>
+      </button>
+      <button class="px-10 py-2 flex gap-2 bg-blue-500 hover:bg-blue-800 text-yellow-50 font-bold rounded-lg"
+        id="translatorOption">
+        <i class="ri-translate-2"></i>
+        <p>Traductor</p>
+      </button>
+    </nav>
+
+    <main class="flex flex-col gap-4" id="content">
+      <section class="p-10 bg-white text-lg rounded-lg shadow-lg">
+        <h1 class="text-center text-3xl font-bold underline">
+          Acerca de esta aplicación
+        </h1>
+        <p class="mt-8">
+          Esta aplicación tiene el objetivo de ejemplificar algunos usos básicos
+          de la inteligencia artificial aplicada al desarrollo web 😄, a medida
+          que hayan más ideas por parte del creador, la aplicación se
+          desarrollará de una mejor manera convirtiendola así, en otra escala en
+          una plataforma de iniciación al IA 🤓.
+        </p>
+        <p class="mt-3">
+          Como parte de la explicación de estos conceptos, se presenta de una
+          manera animada a "Giorgio 🤖" que formará parte de este objetivo 😄.
+        </p>
+        <p class="mt-3">
+          Actualmente siendo la versión 0.1, esta aplicación tiene las
+          siguientes funcionalidades 😄:
+        </p>
+        <ul class="mt-3 ml-5 list-disc">
+          <li>
+            <b>PRIMERO:</b> Asistente de universitario que brinda información de la facultad de ingeniería.
+          </li>
+          <li>
+            <b>SEGUNDO:</b> Aplicación de "Text to Speech" para el pronunciamiento de la
+            palabras en el navegador y aplicación de "Speech to Text" para el reconocimiento de voz del usuario y
+            transcripción de este en un artículo.
+          </li>
+          <li>
+            <b>TERCERO:</b> Un traductor de voz para transcribir diferentes idiomas según lo que desees escoger.
+          </li>
+        </ul>
+        <p class="mt-3">
+          De parte del encargado del desarrollo de la presente aplicación le deseo que este le sea de su agrado 👍.
+        </p>
+        <p class="mt-3">Muchas gracias.</p>
+        <p class="mt-3">Atte. J.L. & J.A.</p>
+      </section>
+    </main>
+
+    <footer class="p-8 flex items-center bg-white rounded-lg">
+      <a href="/" class="text-xl text-center font-bold">
+        🤖 Giorgio Assistant
+      </a>
+    </footer>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
